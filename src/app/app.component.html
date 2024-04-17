@@ -1,0 +1,24 @@
+<h1>Primer App: Edades</h1>
+<section>
+  <div>
+    <label for="edadUno">Ingrese la primera edad: </label>
+    <input type="number" [(ngModel)]="edadUno" />
+    <br />
+    <label for="edadDos">Ingresar la segunda edad: </label>
+    <input type="number" [(ngModel)]="edadDos" />
+  </div>
+  <div>
+    <h2>Resultados:</h2>
+    <label for="promedio">Promedio de las edades </label>
+    <input type="text" id="promedio" disabled placeholder="{{ promedio }}" />
+    <br />
+    <label for="suma">Suma de las edades </label>
+    <input type="text" id="suma" disabled placeholder="{{ suma }}" />
+  </div>
+  <div>
+    <button id="calcular" (click)="mostrarResultados()">CALCULAR</button>
+    <button id="limpiar" (click)="limpiarInputs()">
+      LIMPIAR CUADROS DE TEXTO
+    </button>
+  </div>
+</section>
